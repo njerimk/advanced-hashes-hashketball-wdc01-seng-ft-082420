@@ -286,7 +286,7 @@ def big_shoe_rebounds
               max_value = value
                 array.map do |key,value|
                   if key == :rebounds 
-                    max_value = value
+                    puts value
                   end
               end
             end
