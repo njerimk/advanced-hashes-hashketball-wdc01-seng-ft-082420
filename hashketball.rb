@@ -276,6 +276,7 @@ player_stats("Bismack Biyombo")
 
 def big_shoe_rebounds
   max_value = 0
+  shoe_size = 0
   game_hash.map do |key,value|
     value.map do |key,value|
       if key == :players 
@@ -283,6 +284,7 @@ def big_shoe_rebounds
           array.map do |key,value|
             if key == :shoe && max_value < value.to_i 
               max_value = value
+              
             end
           end
         end
