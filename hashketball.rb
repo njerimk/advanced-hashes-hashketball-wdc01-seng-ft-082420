@@ -284,9 +284,10 @@ def big_shoe_rebounds
           array.map do |key,value|
             if key == :shoe && max_value < value.to_i 
               max_value = value
-          array.map do |key,value|
-            if key == :rebounds 
-              max_value = value
+                array.map do |key,value|
+                  if key == :rebounds 
+                    max_value = value
+                  end
               end
             end
           end
